@@ -5,6 +5,8 @@
  * MIT Licensed
  */
 
-require('directory')(__dirname + '/lib/', function (fn, filename) {
+var path  = require('path');
+
+require('directory')(path.join(__dirname, 'lib'), function (fn, filename) {
   module.exports[filename] = fn
 })
