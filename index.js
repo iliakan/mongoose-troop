@@ -7,6 +7,6 @@
 
 var path  = require('path');
 
-require('directory')(path.join(__dirname, 'lib') + '/', function (fn, filename) {
+require('directory')(path.join(__dirname, 'lib', '/'), function (fn, filename) {
   module.exports[filename] = fn
-})
+});
